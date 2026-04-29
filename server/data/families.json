@@ -1,0 +1,14 @@
+[
+  {
+    "id": "garcia-lopez",
+    "nombre": "Familia García López",
+    "invitados": 4,
+    "rsvp": "no_asistira"
+  },
+  {
+    "id": "hernandez-perez",
+    "nombre": "Familia Hernández Pérez",
+    "invitados": 2,
+    "rsvp": null
+  }
+]
