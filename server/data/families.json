@@ -1,14 +1,77 @@
 [
   {
-    "id": "garcia-lopez",
-    "nombre": "Familia García López",
-    "invitados": 4,
-    "rsvp": "no_asistira"
+    "id": "INV_0001",
+    "type": "family",
+    "displayName": "Familia García López",
+    "guests": [
+      {
+        "name": "Carlos García"
+      },
+      {
+        "name": "María López"
+      },
+      {
+        "name": "Ana García"
+      },
+      {
+        "name": "Julio García"
+      }
+    ],
+    "maxGuests": 4,
+    "confirmation": {
+      "status": "confirmed",
+      "companions": []
+    }
   },
   {
-    "id": "hernandez-perez",
-    "nombre": "Familia Hernández Pérez",
-    "invitados": 2,
-    "rsvp": null
+    "id": "INV_0002",
+    "type": "individual",
+    "displayName": "Juan Pérez",
+    "guests": [
+      {
+        "name": "Juan Pérez"
+      }
+    ],
+    "maxGuests": 3
+  },
+  {
+    "id": "INV_0003",
+    "type": "individual",
+    "displayName": "María Rodríguez",
+    "guests": [
+      {
+        "name": "María Rodríguez"
+      }
+    ],
+    "maxGuests": 1,
+    "confirmation": {
+      "status": "confirmed",
+      "companions": []
+    }
+  },
+  {
+    "id": "INV_0004",
+    "type": "family",
+    "displayName": "Familia Ávila Brito",
+    "guests": [
+      {
+        "name": "Fernando Ávila"
+      },
+      {
+        "name": "Esther Brito"
+      }
+    ],
+    "maxGuests": 2
+  },
+  {
+    "id": "INV_0005",
+    "type": "individual",
+    "displayName": "Antonio Alonso",
+    "guests": [
+      {
+        "name": "Antonio Alonso"
+      }
+    ],
+    "maxGuests": 1
   }
 ]

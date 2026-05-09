@@ -2,6 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const generateQR = require("../utils/qrGenerator");
+const rsvpRoutes = require("./rsvp");
 
 const router = express.Router();
 const dataPath = path.join(__dirname, "../data/families.json");
@@ -30,22 +31,9 @@ router.get("/:id", (req, res) => {
 
 /**
  * POST /api/invitations/:id/rsvp
- * Guardar confirmación
+ * Guardar confirmación 
  */
-router.post("/:id/rsvp", (req, res) => {
-  const { response } = req.body;
-  const families = readData();
-
-  const family = families.find(f => f.id === req.params.id);
-  if (!family) {
-    return res.status(404).json({ message: "Familia no encontrada" });
-  }
-
-  family.rsvp = response;
-  writeData(families);
-
-  res.json({ message: "RSVP guardado correctamente" });
-});
+ router.use("/", rsvpRoutes);
 
 /**
  * GET /api/invitations/:id/qr
@@ -55,6 +43,11 @@ router.get("/:id/qr", async (req, res) => {
   const url = `http://10.1.77.53:5500/index.html?familia=${req.params.id}`;
   const qr = await generateQR(url);
   res.json({ qr });
+});
+
+router.get("/invitations", (req, res) => {
+  const families = readData(); // Función para leer el archivo families.json
+  res.json(families);
 });
 
 module.exports = router;

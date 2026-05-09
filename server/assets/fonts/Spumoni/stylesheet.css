@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Spumoni LP Std';
+    src: url('SpumoniLPStd.eot');
+    src: local('Spumoni LP Std Regular'), local('SpumoniLPStd'),
+        url('SpumoniLPStd.eot?#iefix') format('embedded-opentype'),
+        url('SpumoniLPStd.woff2') format('woff2'),
+        url('SpumoniLPStd.woff') format('woff'),
+        url('SpumoniLPStd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
