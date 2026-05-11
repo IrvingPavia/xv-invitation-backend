@@ -10,7 +10,7 @@ const fs = require("fs");
 
 
 const DOMAIN_URL = "http://127.0.0.1:5500";
-const BASE_INVITE_URL = "https://golden-profiterole-8523b0.netlify.app/public/index.html";
+const BASE_INVITE_URL = "https://golden-profiterole-8523b0.netlify.app/";
 
 
 router.get("/rsvps", (req, res) => {
